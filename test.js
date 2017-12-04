@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   head:{
     fontSize:20,
-    marginLeft:50
+    alignSelf:'center',
   },
   image:{
       width:80

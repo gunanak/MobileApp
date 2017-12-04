@@ -15,6 +15,9 @@ import {
 import Test from './test';
 import Contact from './contact';
 import JobListTwo from './JobListTwo';
+import Address from './address';
+import Cash from './cash';
+
 
 import { Router, Scene } from 'react-native-router-flux';
 
@@ -31,8 +34,10 @@ export default class App extends React.Component {
    <Router>
           <Scene key="root">
           <Scene key="jobListTwo" component={JobListTwo} title="JOB LIST2"  />
-          <Scene key="contact" component={Contact} title="Job List" initial={true} />
+          <Scene key="contact" component={Contact} title="Job List"  />
           <Scene key="test" component={Test} title="Job List" />
+          <Scene key="address" component={Address} title="Address" initial={true} />
+          <Scene key="cash" component={Cash} title="Cash"  />
           </Scene>
     </Router>
     );
